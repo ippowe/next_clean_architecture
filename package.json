@@ -1,4 +1,9 @@
 {
+  "name": "next-clean-architecture",
+  "version": "0.0.0",
+  "description": "Clean architecture에 맞춰 Next.js를 사용하기 위한 보일러 플레이트",
+  "license": "MIT",
+  "author": "Jaemin Ahn <jae7415@gmail.com>",
   "scripts": {
     "dev": "next ./src/frameworks/next",
     "build": "next build ./src/frameworks/next",
