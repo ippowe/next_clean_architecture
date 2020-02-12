@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "next ./src/frameworks/next",
+    "build": "next build ./src/frameworks/next",
+    "start": "next start ./src/frameworks/next"
+  },
   "dependencies": {
     "next": "^9.2.1",
     "react": "^16.12.0",
