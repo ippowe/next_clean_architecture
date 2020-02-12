@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default () => (
-  <div>Hello Next.tsx</div>
-)
+const App: React.FC = () => <div>Hello Next.tsx</div>;
+
+export default App;
