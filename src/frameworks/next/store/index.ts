@@ -3,11 +3,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { reducer as init, InitStore } from './init';
 
 const bindMiddleware = (middleware): StoreEnhancer => {
-    if (process.env.NODE_ENV !== 'production') {
-        return composeWithDevTools(applyMiddleware(...middleware));
-    } else {
-        return applyMiddleware(...middleware);
-    }
+    return composeWithDevTools(applyMiddleware(...middleware));
 };
 
 export interface TAppStore {
