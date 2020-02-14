@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  next-staging:
+    build: 
+      context: .
+      dockerfile: ./docker/next-staging.Dockerfile
+    expose:
+      - 8080
+    ports:
+      - 8080:80
+    command: yarn run start
+
+
+  storybok:
+    build:
+      context: .
+      dockerfile: ./docker/storybook.Dockerfile
+    expose: 
+      - 8081
+    ports:
+      - 8081:8081
+    command: npx http-server .dist -p 8081 --silent

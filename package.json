@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next ./src/frameworks/next",
     "build": "next build ./src/frameworks/next",
-    "start": "next start ./src/frameworks/next",
+    "start": "next start ./src/frameworks/next -p 80",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "test": "jest"
   },
